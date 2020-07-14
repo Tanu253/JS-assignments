@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript to display date</title>
+</head>
+<body style="background-color: darkgray; text-align: center;">
+    <h2>
+        Today's date : 
+    </h2>
+    <script type="text/javascript">
+        
+        var day = new Date();
+        var date= day.getDate();
+        var month = day.getMonth()+1;
+        var year = day.getFullYear();
+         if(date<10) 
+        {
+            date='0'+date;
+        } 
+
+        if(month<10) 
+        {
+            month='0'+month;
+        } 
+        //document.write('<strong>',month,' / ',day,' / ',year,'</strong>')
+        //document.write('<strong>',month,' - ',day,' - ',year,'</strong>')
+        document.write('<strong>',date,' / ',month,' / ',year,'</strong>')
+        document.write("<br>");
+        document.write('<strong>',date,' - ',month,' - ',year,'</strong>')
+    </script>
+</body>
+</html>
