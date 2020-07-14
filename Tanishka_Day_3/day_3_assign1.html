@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>
+        Console Types
+    </title>
+</head>
+
+<body bgcolor="pink" style="text-align: center;">
+    <script>
+        alert("Click Here .... ");
+    </script>
+    <h2>
+        Console Types in javascript...
+    </h2>
+    <p style="font-size: x-large;">
+        Hellooo... Lets learn about console...!!!;
+    </p>
+    <script>
+        //console.log() method
+        console.log(5 + 6); // addition is printed in console
+        console.log("Tanishka"); //string is printed 
+
+        //console.error() method
+        console.error("Error printed in console...!!!"); //error is generated using console.error
+        console.error("Error printed manually.."); //error is generated using console.error
+
+        // console.warn() method
+        console.warn("Usagae of variable twice "); //warning generated
+        console.warn("Manually printing warning"); //warning generated
+
+
+        // console.time() and console.timeEnd() method  
+        console.time('Tanu');
+        let funning = function() {
+            console.log('function is running!!'); //will show the funning is running
+        }
+        let funn = function() {
+            console.log('function is running..'); // still running but here 2md function is running
+        }
+        funning(); // calling fun(); 
+        funn(); // calling fun2(); 
+        console.timeEnd('Tanu'); //end the time for function calling and prints how much time the function has taken.
+
+        // console.table() method 
+        console.table({
+            1: "Tanishka",
+            2: "Vadwala" // here table is created using console.table
+        });
+    </script>
+</body>
+
+</html>
