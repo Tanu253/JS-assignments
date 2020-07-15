@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>
+        Methods of strings and arrays
+    </title>
+</head>
+
+<body style="background-color:gray; color:gold">
+    <script>
+        alert("Click here to see the methods of arrays and strings...!!!");
+
+        //String Methods..
+        //substring-same as slice but can not accept negative value
+        let sub = "Dance, Fruits, Vegetables, Love";
+        let ress = sub.substring(0, 5);
+        console.log(ress); //Dance
+
+        //replace
+        let stng = "Be Safe Guys... Lets join something..."
+        console.log(stng);
+        let txt = stng.replace("join", "learn");
+        console.log(txt); //Be Safe Guys... Lets learn something..
+
+        //slice-can accept negative value
+        let strng = "Dance, Fruits, Vegetables, Love";
+        let r = strng.slice(7, 13);
+        console.log(r); //Fruits
+
+        let s1 = "Dance, Fruits, Vegetables, Love";
+        let rep = s1.slice(-11 - 6);
+        console.log(rep); //Vegetables, Love
+
+        //trim
+        var str = "      Be safe N learn something..!!     ";
+        alert(str.trim());
+        console.log(str.trim());
+
+        //Array Methods...
+        //join
+        let name = ["Tanishka", "Vraj", "Kshitij", "Ankita"];
+        console.log(name.join(" * "));
+
+        //delete
+        let vegetables = ["Potato", "Tomato", "LadyFinger", "Beetroot"];
+        console.log(vegetables);
+        delete vegetables[2]; // Changes the third element in vegetable to undefined
+        console.log(vegetables);
+
+        //splice
+        let fruits = ["Watermelon", "Pomegranate", "Juice", "KacchiKeri"];
+        console.log("original array", fruits); //["Watermelon", "Pomegranate", "Juice", "KacchiKeri"]
+        let removed = fruits.splice(2, 2, "Apple", "Kiwi");
+        console.log("After splicing", fruits); //"Watermelon", "Pomegranate", "Apple", "Kiwi"]
+        console.log("removed", removed); // ["Juice", "KacchiKeri"]
+
+        //slice
+        var fruit = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        console.log(fruit); //["Banana", "Orange", "Lemon", "Apple", "Mango"]
+        var cut = fruit.slice(2);
+        console.log(cut); //["Lemon", "Apple", "Mango"]
+    </script>
+    <h2>
+        Question 2 :
+    </h2>
+    <h4>
+        <p>Explain with examples the remaining methods of String and Array
+            <hr> String Methods... <br>1.substring <br> 2.replace <br> 3.replace all <br>4.slice
+            <hr>
+            <br> Array Methods... <br> 1.join <br> 2.delete <br> 3.splice <br> 4.slice
+        </p>
+    </h4>
+    <p>
+
+</body>
+
+</html>
