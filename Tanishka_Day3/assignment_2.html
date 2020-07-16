@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        OS name and Version
+    </title>
+</head>
+
+<body style="background-color: burlywood; text-align: center; height:5em ; ">
+    <h2 style="background-color: rgb(112, 30, 46); height:2em ; color: azure; text-align: center; ">
+        <script>
+            var abc = prompt("Say your name and enter the page");
+            document.write("Heyyy   ", abc);
+            document.write(" Welcome to the page...");
+        </script>
+    </h2>
+    <h2 style="color:rgba(51, 15, 15, 0.658); background-color:rgba(94, 19, 72, 0.192) ; text-align: left;">
+        OS Name and Version ....!!! <br>
+        <br> Enter OS Name and Version :
+        <input style="width: 20em; height:3em ;" type="text" id="input" required>
+        <br>
+        <br>
+        <button style="width: 10em; height:3em ;" onclick="osLog()">
+        Submit  
+    </button>
+        <br>
+        <br>
+        <label id="answer">
+    </label>
+        <script>
+            function osLog() {
+                var text = document.getElementById('input').value;
+                var result = text.split(" ");
+                alert("Click Me to see the answer..!!");
+                console.log("Output :  The Operating System and Verson are :  ");
+                console.log(result[0], result[1]);
+            }
+        </script>
+    </h2>
+</body>
+
+</html>

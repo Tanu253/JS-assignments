@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>
+        Odd and Even
+    </title>
+</head>
+
+<body style="background-color: darksalmon; text-align: center;">
+    <h2>
+        <u> Odd And Even ...</u>
+        <br>
+        <br> Enter Number : <input style="width: 13em; height: 3em ;" type="number" id="input" required>
+
+        <button style="height: 4em; width: 10em;" onclick="categorize()">
+            Submit .. 
+        </button>
+        <br>
+        <br>
+        <label id="answer"></label>
+        <script>
+            function categorize() {
+                var num = parseInt(document.getElementById('input').value);
+                if ((num % 2) == 0) {
+                    document.getElementById('answer').innerHTML = " Answer is : Value is Even ...!!!";
+                    console.log("Value is Even..");
+                } else {
+                    document.getElementById('answer').innerHTML = " Answer is : Value is Odd ...!!!";
+                    console.log("Value is Odd..");
+                }
+            }
+        </script>
+    </h2>
+
+</body>
+
+</html>

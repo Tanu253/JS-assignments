@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        Grading System ...
+    </title>
+</head>
+
+<body style="background-color:darkturquoise; text-align: center; font-size:xx-large; font-weight:bolder; color:#1a2549c4">
+    <h2 style="background-color:burlywood; text-align: center; color: floralwhite;">
+        Grading System of students...!!!
+    </h2>
+    <script>
+        var totalMarks = prompt("Enter marks : ");
+        switch (true) {
+            case totalMarks >= 50 && totalMarks < 60:
+                alert("Can do better..!! You have passed the exam !!");
+                document.write("Can do better..!!You have passed the exam !!");
+                console.log(totalMarks);
+                console.log("Can do better..!!You have passed the exam !!");
+                break;
+            case totalMarks >= 60 && totalMarks < 85:
+                alert(" Very Good ..!! You got second grade!!");
+                document.write(" Very Good ..!! You got second grade!!");
+                console.log(totalMarks);
+                console.log(" Very Good ..!! You got second grade!!");
+                break;
+            case totalMarks >= 85:
+                alert("Excellent..!! You got first grade!!");
+                document.write(" Excellent..!! You got first grade!!");
+                console.log(totalMarks);
+                console.log("Excellent..!! You got first grade!!");
+                break;
+            default:
+                alert(" Try next time...You failed!!");
+                document.write("Try next time...You failed");
+                console.log("Try next time...You failed");
+        }
+    </script>
+</body>
+
+</html>
