@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Rewarding Employeess
+    </title>
+</head>
+
+<body style="background-color: rgb(17, 87, 83); font-size: x-large; font-weight: bolder; color: lightsteelblue;">
+    <h2 style="margin-top: 5em; font-size: xx-large;">
+        Rewarding Hardworking Employeess...!!!
+        <hr>
+
+        <!--Enter the salary: <input text="number" id="sal" placeholder="Enter salary" style="width: 15em; height:3em ;">-->
+        <script style="font-size: xx-large;">
+            var sal = parseInt(prompt("Enter Sales : "));
+            var plus;
+            if ((sal > 0) && (sal <= 5000)) {
+                plus = (2 / sal) * 100;
+                document.write("Increased By 2% <br>");
+                document.write("After 2% adding increment :-- " + plus);
+            } else if ((sal > 5001) && (sal <= 10000)) {
+                plus = (5 / sal) * 100;
+                document.write("Increased By 5% <br>");
+                document.write("After 5% adding increment :-- " + plus);
+                document.write(plus);
+            } else if ((sal > 10001) && (sal <= 20000)) {
+                plus = (7 / sal) * 100;
+                document.write("Increased By 7% <br>");
+                document.write("After 7% adding increment :-- " + plus);
+                document.write(plus);
+            } else if (sal > 20000) {
+                plus = (10 / sal) * 100;
+                document.write("Increased By 10%  <br>");
+                document.write("After 10% adding increment :-- " + plus);
+                document.write(plus);
+            } else {
+                alert("Need more salary");
+                document.write("Invalid salary...");
+            }
+        </script>
+    </h2>
+</body>
+
+</html>

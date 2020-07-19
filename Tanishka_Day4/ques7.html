@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+        Prime Numbers...
+    </title>
+</head>
+
+<body style="font-size: xx-large; background-color:darksalmon; color: rgb(61, 21, 77); font-weight: bold; text-align: center; margin-top: 5em;">
+    <h2>
+        Prime Number are :
+    </h2>
+    <script style="font-size: xx-large; color: mintcream;">
+        alert("Click Here To Enter the page...!!! \n");
+        document.write("Prime Numbers are .. ");
+        let n = 15;
+        nextPrime: for (let i = 2; i <= n; i++) {
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue nextPrime;
+            }
+            alert(i);
+            console.log(i);
+            document.write(i + " ");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Greater than 100
+    </title>
+</head>
+
+<body style="background-color: dimgrey; font-size: x-large; color: azure; text-align: center;">
+    <h1>
+        Greater than Number 100...
+    </h1>
+    <script>
+        //var number = parseInt(prompt("Please enter a number greater than 100", ""));
+
+        for (;;) {
+            var number = parseInt(prompt("Please enter a number greater than 100", ""));
+            console.log(number);
+            if (number < 100) {
+                //console.log(number);
+                continue;
+            } else if (isNaN(number)) {
+
+                alert("Can't leave it empty...");
+                break;
+            } else if (number >= 100) {
+                document.write("Your number " + number + " is matches requirements", "");
+                console.log("Matches the requirements...");
+                break;
+                //return;
+            }
+        }
+    </script>
+</body>
+
+</html>

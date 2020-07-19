@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        Shopping List
+    </title>
+</head>
+
+<body style="background-color: floralwhite; color: rgb(45, 109, 53); font-size: x-large; font-weight: bolder; margin-top: 5em;">
+    <h3>
+        SHOPPING LIST...
+        <hr>
+    </h3>
+    <script style="font-weight: bolder; font-size: xx-large;">
+        //document.write("Your Shopping List is :  ");
+        document.write("List before adding new element : ")
+        document.write("Banana, Orange, Apple, Mango");
+        document.write("<br>");
+        document.write("<br>");
+        var items = parseInt(prompt("Enter number of new items u wanna add... "));
+        var Shopping_List = ["Banana", "Orange", "Apple", "Mango"];
+        for (var i = 0; i < items; i++) {
+            var str = prompt("Enter the shopping items u wanna add..");
+            Shopping_List.push(str);
+        }
+        document.write("List after adding new items : ");
+        var Shopping_Basket = Shopping_List;
+        document.write(Shopping_Basket);
+    </script>
+</body>
+
+</html>

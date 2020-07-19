@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        Arrow Function
+    </title>
+</head>
+
+<body style="background-color: bisque; color: darkgreen; font-size: xx-large; font-weight: bolder;">
+    <h1 style="color: darkslateblue;">
+        Arrow Function...
+        <hr> </h1>
+    <script>
+        var hello;
+        hello = (question, yes, no) => {
+            if (confirm(question)) yes()
+            else no();
+        }
+        hello("Do u agree?",
+                function() {
+                    alert("You Aggree..!!");
+                    document.write("You Agreed..!!");
+                },
+                function() {
+                    alert("You cancelled the execution..!!");
+                    document.write("You Cancelled..!!");
+
+                })
+            //document.write("You Cancelled");
+    </script>
+</body>
+
+</html>

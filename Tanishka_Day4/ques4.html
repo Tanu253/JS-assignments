@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        td,
+        th {
+            background-color: ivory;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(83, 31, 31);
+        }
+        
+        body {
+            background-color: linen;
+            align-self: center;
+        }
+        
+        table {
+            border-width: 2em;
+            width: 5em;
+            border-top-color: gold;
+            border-color: firebrick;
+        }
+    </style>
+
+</head>
+
+<body style="margin-top: 5em;">
+    <script>
+        alert("Click here to use calculator...");
+    </script>
+    <h1 style="color: rgb(133, 48, 14); margin-top: 5em; text-align: center; border-color: cadetblue;">
+        Table : Calculator
+        <hr>
+    </h1>
+    <table border="2" style="text-align: center; margin-left: 30em;">
+        <thead>
+            <tr>
+                <th>Enter Number 1 : </th>
+                <br>
+                <th>Enter Number 2 : </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="t1"></td>
+                <td><input type="text" id="t2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="b1" value="ADD" onclick="add()"><br>
+                    <input type="button" id="b2" value="SUBTRACTION" onclick="sub()"><br>
+                    <input type="button" id="b3" value="DIVISION" onclick="div()"><br>
+                    <input type="button" id="b4" value="MULTIPLICATION" onclick="multi()"><br>
+                </td>
+                <td><input type="text" placeholder="Answer:" id="t3"></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script>
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var t3 = document.getElementById("t3");
+
+        function add() {
+            var c = parseFloat(t1.value) + parseFloat(t2.value);
+            t3.value = c.toString();
+        }
+
+        function sub() {
+            var c = parseFloat(t1.value) - parseFloat(t2.value);
+            t3.value = c.toString();
+        }
+
+        function div() {
+            var c = parseFloat(t1.value) / parseFloat(t2.value);
+            t3.value = c.toString();
+        }
+
+        function multi() {
+            var c = parseFloat(t1.value) * parseFloat(t2.value);
+            t3.value = c.toString();
+        }
+    </script>
+</body>
+
+</html>

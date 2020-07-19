@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>
+        Destructing Object...
+    </title>
+</head>
+
+<body style="background-color: lightcoral; color: rgb(46, 97, 100); text-align: center; margin-inline:inherit ; font-size: xx-large; margin-top: 5em;">
+    <h1>
+        Destructing Objects...!!!
+    </h1>
+    <script style="font-size: xx-large;">
+        let student = {
+            name: "Helsinki",
+            age: 24,
+            projects: {
+                diceGame: "Two player dice game using javascript..."
+            }
+        }
+        console.log(student.name);
+
+        //Destructing   Objects
+        const {
+            name,
+            age,
+            projects: {
+                diceGame
+            }
+        } = student;
+        console.log(name, age, diceGame);
+        document.write(name);
+        document.write("\n");
+        document.write(age);
+        document.write("\n");
+        document.write(diceGame);
+    </script>
+</body>
+
+</html>
