@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<body style="background-color: bisque;">
+    <h1 style="margin-top: 9em; text-align: center; background-color:olive; color: honeydew;">
+        Random todos from the json placeholder api...!!
+    </h1>
+    <script>
+        async function API(url) {
+            const response = await fetch(url);
+            const data = await response.json();
+            return data;
+        }
+
+        API('https://jsonplaceholder.typicode.com/todos')
+            .then(data => {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].completed == true) {
+                        console.log(data[i].id);
+                        //document.write(data[i].id);
+                        console.log(data[i].completed);
+                        //document.write(data[i].completed);
+                    }
+                }
+            })
+    </script>
+</body>
+
+</html>

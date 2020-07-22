@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<body style="font-size: x-large ; font-weight: bolder; background-color: beige; text-align: center;">
+    <h2>
+        <p style="background-color:lavender; font-size: xx-large;"> Odd number cubes : </p>
+        <br>
+
+        <script>
+            var num = prompt("Enter how many numbers you want add :- ");
+            var arr = new Array();
+            var arr1 = new Array();
+            for (var i = 0; i < parseInt(num); i++) {
+                var num1 = prompt("Enter number : ");
+                arr.push(num1);
+                if (num1 % 2 != 0) {
+                    arr1.push(num1);
+                }
+            }
+            for (var t = 0; t <= arr1.length - 1; t++) {
+                document.write(arr1[t] * arr1[t] * arr1[t] + "<br>");
+                console.log(arr1[t]);
+                //console.log(num1);
+            }
+        </script>
+    </h2>
+</body>
+
+</html>
