@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>
+        Multiplication table
+    </title>
+</head>
+
+<body style="background-color: blanchedalmond; font-size:large; font-weight: bolder; text-align: center; color:darkblue;">
+    <h1>
+        Multiplication Table :
+    </h1>
+    <p id="table"></p>
+    <script type="text/javascript" style="color: crimson;">
+        var ask = prompt("Enter Number : ");
+        var no = parseInt(ask);
+
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+            document.write("<br>" + no + "x " + i + " = " + no * i + "<br>");
+            console.log(no + " * " + i + " = " + no * i);
+        }
+    </script>
+</body>
+
+</html>
