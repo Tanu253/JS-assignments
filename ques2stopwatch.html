@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer>
+        var a = parseInt(prompt("Enter the timer you want to set(In seconds) : "));
+
+        var temp = 0,
+            far;
+
+        function abc(c) {
+            if (c == 0) {
+                document.getElementById("time").innerHTML = temp;
+                document.getElementById("start").style.visibility = "hidden";
+                setTimeout(function() {
+                    document.getElementById("stop").style.visibility = "visible";
+                }, 1000);
+
+                far = setInterval(function() {
+                    if (temp <= a - 1) {
+
+                        temp += 1;
+                        document.getElementById("time").innerHTML = temp;
+                    } else {
+                        document.getElementById("time").innerHTML = "Your timer ended in " + a + " seconds";
+                        document.getElementById("stop").style.visibility = "hidden";
+                        return;
+                    }
+
+                }, 1000)
+            }
+
+            if (c == 1) {
+                clearInterval(far);
+                document.getElementById("time").innerHTML = "Your timer ended in " + temp + " seconds";
+                document.getElementById("stop").style.visibility = "hidden";
+                return;
+            }
+
+        }
+    </script>
+</head>
+
+<body style="background-color: darkgray; font-size: xx-large; font-weight: bolder;">
+    <h2>
+        StopWatch...
+        <hr>
+    </h2>
+    <p>Your Timer : </p>
+    <p id="time"></p>
+    <input type="button" value="start" id="start" onclick=abc(0); style=" height:3em; width: 15em;">
+    <input type="button" value="stop" id="stop" onclick=abc(1); style="visibility: hidden ; height:3em; width: 15em;">
+</body>
+
+</html>
